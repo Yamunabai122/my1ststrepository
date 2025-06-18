@@ -1,0 +1,4 @@
+ver2 updatetxt1
+ver2 updatetxt2
+ver2 updatetxt3
+ver2 updatetxt4
