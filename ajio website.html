@@ -1,51 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AJIO Clone</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Ajio Clone - womens Fashion</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color:blue#10a8bc;
+        }
+
+        
+        header {
+            background-color: #04eefa;
+            color: rgb(147, 183, 28);
+            padding: 25px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .search-bar {
+            flex-grow: 1;
+            margin: 0 20px;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: none;
+        }
+
+        .user-actions a {
+            color: black;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+    
+        nav {
+            background-color: #ddf103;
+            color: rgb(6, 6, 6);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            padding: 15px 20px;
+            cursor: pointer;
+        }
+
+        nav ul li:hover {
+            background-color: #fd0202;
+        }
+
+        
+        .banner {
+            background-color: #eee9f0;
+            color: rgb(230, 237, 230);
+            text-align: center;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        .banner h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        
+        .categories {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: rgb(230, 245, 224);
+            margin-bottom: 20px;
+        }
+
+        .category {
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .category img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            display: grid;
+            background-color: rgb(240, 242, 226);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(68, 245, 4, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .product-price {
+            color: #ea0a0a;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .add-to-cart {
+            background-color: rgb(236, 235, 235);
+            color: black;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .add-to-cart:hover {
+            background-color: #0c4a52;
+        }
+
+    
+        footer {
+            background-color: #000;
+            color: rgb(6, 237, 152);
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <div class="logo">AJIO</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products, brands and more">
+        </div>
+        <div class="user-actions">
+            <a href="#">Login</a>
+            <a href="#">Wishlist</a>
+            <a href="#">Bag</a>
+        </div>
+    </header>
 
-  <header style="background-color: black; color: white; padding: 15px;">
-    <h1 style="display: inline;">AJIO</h1>
-    <nav style="display: inline-block; margin-left: 40px;">
-      <a href="#" style="color: red; margin-right: 20px;">Men</a>
-      <a href="#" style="color: white; margin-right: 20px;">Women</a>
-      <a href="#" style="color: white; margin-right: 20px;">Kids</a>
-      <a href="#" style="color: white; margin-right: 20px;">Sale</a>
+    <nav>
+        <ul>
+            <li>Men</li>
+            <li>Women</li>
+            <li>Kids</li>
+            <li>Home</li>
+            <li>Offers</li>
+        </ul>
     </nav>
-  </header>
-
-
-
-  <section>
-    <img src="https://assets.ajio.com/medias/sys_master/root/20230509/HXda/645a06a142f9e729d73a5bde/-473Wx593H-469157079-white-MODEL.jpg
-" alt="Banner" width="100%">
-  </section>
-
-  <section style="display: flex; flex-wrap: wrap; gap: 20px; padding: 20px;">
-    <div style="border: 1px solid #ccc; padding: 10px; width: 200px;">
-      <img src="c:\Users\MRCET\Downloads\Buy Navy Blue Kurtas for Women by AKS Online _ Ajio.com.html" width="100%">
-      <h3>dress</h3>
-      <p>₹999</p>
+    <center><h1>sales</h1></center>
+    <div class="banner">
+        <marquee directions="left">
+            <img src="women 2.jpg" alt="women 2.jpg" width="300" height="300">
+            <img src="locket.jpg" alt="SUMMER SALE" width="400" height="400">
+            <img src="teddy.jpg" alt="SUMMER SALE" width="200" height="300">
+            <img src="shop.jpg" alt="SUMMER SALE" width="400" height="500">
+            <img src="white.jpg" alt="SUMMER SALE" width="200" height="400">
+            <img src="red.jpg" alt="SUMMER SALE" width="300" height="500">
+            <img src="saree.webp" alt="SUMMER SALE" width="200" height="400">
+            <img src="saree5.jpg" alt="SUMMER SALE" width="300" height="400">
+        </marquee>
     </div>
     
-    <div style="border: 1px solid #ccc; padding: 10px; width: 200px;">
-      <img src="https://assets.ajio.com/medias/sys_master/root/20230509/HXda/645a06a142f9e729d73a5bde/-473Wx593H-469157079-white-MODEL.jpg" width="100%">
-      <h3>White Sneakers</h3>
-      <p>₹1,499</p>
+
+    <div class="categories">
+        <div class="category">
+            <img src="white.jpg" alt="T-Shirts">
+            <div>T-Shirts</div>
+        </div>
+        <div class="category">
+            <img src="red.jpg" alt="Shirts">
+            <div>Shirts</div>
+        </div>
+        <div class="category">
+            <img src="jeans.jpg" alt="Jeans">
+            <div>Jeans</div>
+        </div>
+        <div class="category">
+            <img src="shoes.jpg" alt="Shoes">
+            <div>Shoes</div>
+        </div>
+        <div class="category">
+            <img src="jacket.jpg" alt="Accessories">
+            <div>Accessories</div>
+        </div>
     </div>
-  </section>
+    <div class="products">
+        <div class="product">
+            <img src="shopping.webp" alt="fashion" class="product-image">
+            <div class="product-info">
+                <div class="product-title">fashion saree</div>
+                <div class="product-price">₹899</div>
+                <button class="add-to-cart">ADD TO BAG</button>
+                </div>
+            </div>
+    
+                </div>
+                </div>
+            
+                    </div>
 
-  <footer style="background-color: black; color: white; text-align: center; padding: 15px;">
-    &copy; 2025 AJIO Clone | Built for learning
-  </footer>
+    <div class="products">
+        <div class="product">
+            <img src="men dress.jpg" alt="Product 1" class="product-image">
+            <div class="product-info">
+                <div class="product-title">Men's Slim Fit T-Shirt</div>
+                <div class="product-price">₹499</div>
+                <button class="add-to-cart">ADD TO BAG</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="beauty.avif" alt="Product 2" class="product-image">
+            <div class="product-info">
+                <div class="product-title">beauty</div>
+                <div class="product-price">₹799</div>
+                <button class="add-to-cart">ADD TO BAG</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="duppata.avif" alt="Product 3" class="product-image">
+            <div class="product-info">
+                <div class="product-title">duppata</div>
+                <div class="product-price">₹1299</div>
+                <button class="add-to-cart">ADD TO BAG</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="dress.avif" alt="Product 4" class="product-image">
+            <div class="product-info">
+                <div class="product-title">dress</div>
+                <div class="product-price">₹1999</div>
+                <button class="add-to-cart">ADD TO BAG</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="bed sheet.avif" alt="offer" class="product-image">
+            <div class="product-info">
+                <div class="product-title">beds wooden street sleep head</div>
+                <div class="product-price">₹8999</div>
+                <button class="add-to-cart">ADD TO BAG</button>
+            </div>
+            </div>
+            <div class="product">
+                <img src="women3.avif" alt="offer" class="product-image">
+                <div class="product-info">
+                    <div class="product-title">dress</div>
+                    <div class="product-price">₹900</div>
+                    <button class="add-to-cart">ADD TO BAG</button>
+                </div>
+                </div>
+                <div class="product">
+                    <img src="women kurta.avif" alt="offer" class="product-image">
+                    <div class="product-info">
+                        <div class="product-title">teddy</div>
+                        <div class="product-price">₹899</div>
+                        <button class="add-to-cart">ADD TO BAG</button>
+                    </div>
+                    </div>
+    </div>
 
+    <footer>
+         Products of ajio.com
+    </footer>
+
+    <script>
+    </script>
 </body>
 </html>
-
-
 
 
