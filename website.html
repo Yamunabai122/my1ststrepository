@@ -1,0 +1,172 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AJIO Clone</title>
+  <link rel="stylesheet" href="ajio website.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">AJIO</div>
+    <nav>
+      <ul class="nav-links">
+        <li id="men-menu">
+          <a href="#">MEN</a>
+          <ul class="dropdown-menu" id="men-dropdown">
+            <li><a href="#">T-Shirts</a></li>
+            <li><a href="#">Shirts</a></li>
+            <li><a href="#">Jeans</a></li>
+            <li><a href="#">Jackets</a></li>
+            <li><a href="#">Shoes</a></li>
+          </ul>
+        </li>
+        <li id="women-menu">
+          <a href="#">WOMEN</a>
+          <ul class="dropdown-menu" id="women-dropdown">
+            <li><a href="#">Dresses</a></li>
+            <li><a href="#">Tops</a></li>
+            <li><a href="#">Skirts</a></li>
+            <li><a href="#">Jeans</a></li>
+            <li><a href="#">Shoes</a></li>
+          </ul>
+        </li>
+        <li id="kids-menu">
+          <a href="#">KIDS</a>
+          <ul class="dropdown-menu" id="kids-dropdown">
+            <li><a href="#">T-Shirts</a></li>
+            <li><a href="#">Shorts</a></li>
+            <li><a href="#">School Uniforms</a></li>
+            <li><a href="#">Shoes</a></li>
+          </ul>
+        </li>
+        <li id="brands-menu">
+          <a href="#">BRANDS</a>
+          <ul class="dropdown-menu" id="brands-dropdown">
+            <li><a href="#">ZARA</a></li>
+            <li><a href="#">GUCCI</a></li>
+            <li><a href="#">ADIDAS</a></li>
+            <li><a href="#">NIKE</a></li>
+          </ul>
+        </li>
+        <li id="sale-menu">
+          <a href="#">SALE</a>
+          <ul class="dropdown-menu" id="sale-dropdown">
+            <li><a href="#">Men's Sale</a></li>
+            <li><a href="#">Women's Sale</a></li>
+            <li><a href="#">Kids' Sale</a></li>
+            <li><a href="#">Clearance</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="search-cart">
+      <input type="text" placeholder="Search AJIO" />
+<button id="searchButton">Search</button>
+<button id="addToCartBtn">Add to Cart</button>
+<button id="wishlistButton" aria-label="Wishlist" style="background: none; border: none; cursor: pointer; font-size: 20px;">
+  <i class="fa-regular fa-heart"></i>
+ 
+</button>
+</button>
+    </div>
+  </header>
+
+  <div class="slide-track">
+    <img src="women dress.jpg" class="women dress.jpg" alt="women 1" />
+    <img src="women 2.jpg" class="women 2.jpg" alt="women 2" />
+    <img src="women kurta.avif" class="slide-img" alt="Women  kurta.avif" />
+    <img src="tshirt.jpg" class="tshirt.jpg" alt="tshirt.jpg" />
+    <img src="kids wear.avif" class="slide-img" alt="Kids  wear.avif" />
+    <img src="baby dress.avif" class="slide-img" alt="baby dress.avif" />
+    <img src="sweater.avif" class="sweater.avif" alt="sweater.avif" />
+  </div>
+
+<h2>Featured Products</h2>
+<div class="products-grid">
+  <div class="product-card">
+    <img src="night dress.avif" alt="Women summer wear" data-name="Women Summer Wear" data-price="899" data-img="womenS.jpeg" />
+    <h3>Women Summer Wear</h3>
+    <p><s>₹999</s> ₹899 (10% OFF)</p>
+    <button class="add-to-cart-btn" data-name="Women Summer Wear" data-price="899" data-img="womenS.jpeg">Add to Cart</button>
+  </div>
+  <div class="product-card">
+    <img src="jeans.avif" alt="Denim Jeans" data-name="Denim Jeans" data-price="1799" data-img="menJ.jpeg" />
+    <h3>Denim Jeans</h3>
+    <p><s>₹1,999</s> ₹1,799 (10% OFF)</p>
+    <button class="add-to-cart-btn" data-name="Denim Jeans" data-price="1799" data-img="menJ.jpeg">Add to Cart</button>
+  </div>
+  <div class="product-card">
+    <img src="tshirt.avif" alt="Casual Wear" data-name="Casual Wear" data-price="719" data-img="menT.jpeg" />
+    <h3>Casual Wear</h3>
+    <p><s>₹799</s> ₹719 (10% OFF)</p>
+    <button class="add-to-cart-btn" data-name="Casual Wear" data-price="719" data-img="menT.jpeg">Add to Cart</button>
+  </div>
+  <div class="product-card">
+    <img src="uniform.avif" alt="Kids Uniform" data-name="Kids Uniform" data-price="1349" data-img="kidsU.jpeg" />
+    <h3>Uniforms</h3>
+    <p><s>₹1,499</s> ₹1,349 (10% OFF)</p>
+    <button class="add-to-cart-btn" data-name="Kids Uniform" data-price="1349" data-img="kidsU.jpeg">Add to Cart</button>
+  </div>
+  <div class="product-card">
+    <img src="formal wear.avif" alt="Formal Wear" data-name="Formal Wear" data-price="1439" data-img="f1.jpeg" />
+    <h3>Formal Wear</h3>
+    <p><s>₹1,599</s> ₹1,439 (10% OFF)</p>
+    <button class="add-to-cart-btn" data-name="Formal Wear" data-price="1439" data-img="f1.jpeg">Add to Cart</button>
+  </div>
+</div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h3>About AJIO</h3>
+        <p>Your favorite online fashion store bringing you the latest trends and styles.</p>
+      </div>
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Men's Fashion</a></li>
+          <li><a href="#">Women's Fashion</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Brands</a></li>
+          <li><a href="#">Sale</a></li>
+        </ul>
+      </div>
+      <div class="footer-section help">
+        <h3>Help</h3>
+        <ul>
+          <li><a href="#">Customer Care</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-section social">
+        <h3>Follow Us</h3>
+        <ul class="social-links">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 AJIO. All rights reserved.</p>
+    </div>
+  </footer>
+<div id="cart-container" class="cart-container">
+  <h2>Your Cart</h2>
+  <ul id="cart-items"></ul>
+  <p id="cart-total">Total: ₹0</p>
+</div>
+
+  <script src=""></script>
+</body>
+</html>  
