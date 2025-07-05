@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="ajio.css" />
+</head>
+<body>
+    <header style="background-color: black;color: wheat; padding: 15px;"> 
+        <h1 style="display: inline;font-size: 300px;">AJIO</h1> 
+        <nav style="display: inline-block; margin-left: 500px;"> 
+            <div class="nav-links"></div>
+            <a href="https://www.ajio.com/s/min40percentoff-108692" style="color:rgb(237, 5, 16); margin-right:500px; font-size: 200px;">MEN</a>
+            <a href="https://www.ajio.com/shop/women" style="color:rgb(245, 229, 6); margin-right:500px; font-size: 200px;">WOMEN</a>
+                
+            <a href="https://www.ajio.com/shop/kids" style="color:cornflowerblue; margin-right:500px; font-size: 200px;">kids</a>
+            <a href="https://www.ajio.com/my-account/orders?srsltid=AfmBOorOXZdUANAXWk512SYIhZir44JXnssivEGH9yNGOAfBnC96hUBS" style="color:greenyellow; margin-right:500px; font-size: 200px;">login</a>
+            <a href="cart.html" style="color: white; font-size: 30px; margin-left: 20px;">🛒 Cart</a>
+  <input type="text" id="searchInput"  placeholder="Search products..." style="width: 1500px; height: 70px; font-size: 50px; padding: 10px 15px; border-radius: 8px; border: 1px solid #ddd;"/>
+  <button style="font-size: 70px;">Search</button>
+            </nav>
+            </header>
+    <marquee behavior="scroll" direction="left" scrollamount="35">
+    <div class="slider">
+    <div class="slides">
+    <img src="https://images.freekaamaal.com/post_images/1704795373.webp" alt="1">
+    <img src="https://www.icicibank.com/content/dam/icicibank/india/managed-assets/images/offer-zone/ajio-banner-01.webp" width="1500px" alt="2">
+    <img src="https://cdn.grabon.in/gograbon/images/web-images/uploads/1617878306337/ajio-coupons.jpg" width="1200px" alt="3">
+    <img src="https://www.couponscurry.com/pics/images/ajio-rs500-off-coupon-code_1629785762.jpg" width="1350px" alt="4">
+    <img src="https://gphome.gumlet.io/promotions/AJIO%20All%20Stars%20Diwali%20Sale.png?w=400&dpr=2.6" width="1750px" alt="5">
+    <img src="https://www.shopickr.com/wp-content/uploads/2017/10/ajio-diwali-sale-1.jpg" width="1350px" alt="6">
+    </div>
+    </marquee>
+    <h2 style="font-size: 100px;color: rgb(27, 3, 65);">Men's Wear</h2>
+        <div style="display: flex; gap: 20px;">
+        <div style="text-align: center; border: 1px solid #ddd; padding: 10px; width: 1000px;">
+        <img src="https://assets.ajio.com/medias/sys_master/root/20241220/7P0J/67658ba2c148fa1b3052b170/trybuy.in_black_men_spread_collar_crochet_shirt.jpg" width="1000" data-name="Men's Shirt" data-price="500"/>
+        <h3 style="font-size: 100px;color: black;">₹500</h3>
+        <a id="cartBtn" href="cart.html" style="color: white; font-size: 50px; margin-right: 20px; text-decoration: none; background-color: #007bff; padding: 10px 20px; border-radius: 8px; display: inline-block;">
+    🛒 Cart
+  </a>
+  <button id="checkoutBtn" onclick="window.location.href='checkout.html'" 
+          style="font-size: 50px; padding: 10px 20px; display:none;">
+    Proceed to Checkout
+  </button>
+</div>
+<script>
+  document.getElementById('cartBtn').addEventListener('click', function(event) {
+    event.preventDefault();
+
+    const img = this.closest('div').querySelector('img');
+    const name = img.getAttribute('data-name');
+    const priceStr = img.getAttribute('data-price'); 
+    const price = Number(priceStr);
+
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push({ name, price });
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    alert(`Added "${name}" to cart at ₹${price}`);
+
+  });
+</script>
+
+        <div style="text-align: center; border: 1px solid #ddd; padding: 10px; width: 1000px;">
+        <img src="https://assets.ajio.com/medias/sys_master/root/20240318/XZY7/65f873b505ac7d77bbc2dc02/-473Wx593H-442532819-black-MODEL.jpg"  width="1000" data-name="Men's Shirt" data-price="2000"/>
+        <h3 style="font-size: 100px;color: black;">₹2,000</h3>
+        <a class="cartBtn" href="cart.html" style="color: white; font-size: 50px; margin-right: 20px; text-decoration: none; background-color: #007bff; padding: 10px 20px; border-radius: 8px; display: inline-block;">
+    🛒 Cart
+  </a>
+  <button class="checkoutBtn" onclick="window.location.href='checkout.html'" 
+          style="font-size: 50px; padding: 10px 20px; display:none;">
+    Proceed to Checkout
+  </button>
+</div>
+
+    
+
+
+        <div style="text-align: center; border: 1px solid #ddd; padding: 10px; width: 1000px;">
+        <img src="https://i.pinimg.com/236x/57/8b/12/578b12f8ddea5c730c0ae31d6d82a7dc.jpg " width="1000px" data-name="Men's Shirt" data-price="1000"/>
+        <h3 style="font-size: 100px;color: black;">₹1,000</h3>
+        <a class="cartBtn" href="cart.html" style="color: white; font-size: 50px; margin-right: 20px; text-decoration: none; background-color: #007bff; padding: 10px 20px; border-radius: 8px; display: inline-block;">
+    🛒 Cart
+  </a>
+  <button class="checkoutBtn" onclick="window.location.href='checkout.html'" 
+          style="font-size: 50px; padding: 10px 20px; display:none;">
+    Proceed to Checkout
+  </button>
+</div>
+
+    
+
+        <div style="text-align: center; border: 1px solid #ddd; padding: 10px; width: 1000px;">
+        <img src="https://www.sudarshansaree.com/cdn/shop/files/ETW121005C.jpg?v=1690022567&width=1445"  width="900px" data-name="Men's Shirt" data-price="1500"/>
+        <h3 style="font-size: 100px;color: black;">₹1,500</h3>
+        <a class="cartBtn" href="cart.html" style="color: white; font-size: 50px; margin-right: 20px; text-decoration: none; background-color: #007bff; padding: 10px 20px; border-radius: 8px; display: inline-block;">
+    🛒 Cart
+  </a>
+  <button class="checkoutBtn" onclick="window.location.href='checkout.html'" 
+          style="font-size: 50px; padding: 10px 20px; display:none;">
+    Proceed to Checkout
+  </button>
+</div>
+
+
+        <div style="text-align: center; border: 1px solid #ddd; padding: 10px; width: 1000px;">
+        <img src="https://i.pinimg.com/236x/c7/5b/93/c75b938853223c5ff01e285fc9b26e61.jpg"  width="1000px" data-name="Men's Shirt" data-price="2500"/>
+        <h3 style="font-size: 100px;color: black;">₹2,500</h3>
+        <a class="cartBtn" href="cart.html" style="color: white; font-size: 50px; margin-right: 20px; text-decoration: none; background-color: #007bff; padding: 10px 20px; border-radius: 8px; display: inline-block;">
+    🛒 Cart
+  </a>
+  <button class="checkoutBtn" onclick="window.location.href='checkout.html'" 
+          style="font-size: 50px; padding: 10px 20px; display:none;">
+    Proceed to Checkout
+  </button>
+</div>
+
+
+        <div style="text-align: center; border: 1px solid #ddd; padding: 10px; width: 1000px;">
+        <img src="https://static3.azafashions.com/tr:w-450/uploads/product_gallery/1724161655389_1.JPG"  width="800px" data-name="Men's Shirt" data-price="500"/>
+        <h3 style="font-size: 100px;color: black;">₹500</h3>
+       <a class="cartBtn" href="cart.html" style="color: white; font-size: 50px; margin-right: 20px; text-decoration: none; background-color: #007bff; padding: 10px 20px; border-radius: 8px; display: inline-block;">
+    🛒 Cart
+  </a>
+  <button class="checkoutBtn" onclick="window.location.href='checkout.html'" 
+          style="font-size: 50px; padding: 10px 20px; display:none;">
+    Proceed to Checkout
+  </button>
+</div>
+
+
+        <div style="text-align: center; border: 1px solid #ddd; padding: 10px; width: 1000px;">
+        <img src="https://www.trrendo.com/cdn/shop/files/C30DF4DB-3F06-4D59-AA7D-5D96CCE78DBA.jpg?v=1735541637&width=1080"  width="800px" data-name="Men's Shirt" data-price="800"/>
+        <h3 style="font-size: 100px;color: black;">₹800</h3>
+        <a class="cartBtn" href="cart.html" style="color: white; font-size: 50px; margin-right: 20px; text-decoration: none; background-color: #007bff; padding: 10px 20px; border-radius: 8px; display: inline-block;">
+    🛒 Cart
+  </a>
+  <button class="checkoutBtn" onclick="window.location.href='checkout.html'" 
+          style="font-size: 50px; padding: 10px 20px; display:none;">
+    Proceed to Checkout
+  </button>
+</div>
+
+    </div>
+    
+        <h3 style="font-size: 100px;color: rgb(27, 3, 65);">Women Wear</h3>
+        <div style="display: flex; gap: 20px;">
+        <div style="text-align: center; border: 1px solid #ddd; padding: 10px; width: 1000px;">
+        <img src="https://getglamr.com/cdn/shop/files/MG_5204-2.jpg?v=1741347661" width="1000" height="1800" data-name="women wear" data-price="900"/>
+        <h3 style="font-size: 100px;color: black;">₹900</h3>
+        <a class="cartBtn" href="cart.html" style="color: white; font-size: 50px; margin-right: 20px; text-decoration: none; background-color: #007bff; padding: 10px 20px; border-radius: 8px; display: inline-block;">
+    🛒 Cart
+  </a>
+  <button class="checkoutBtn" onclick="window.location.href='checkout.html'" 
+          style="font-size: 50px; padding: 10px 20px; display:none;">
+    Proceed to Checkout
+  </button>
+</div>
+
+        <div style="text-align: center; border: 1px solid #ddd; padding: 10px; width: 1000px;">
+        <img src="https://img4.dhresource.com/webp/m/0x0/f3/albu/km/t/23/61490f89-f610-4bd2-bc2b-1cd78052be43.jpg" width="1000" height="1800" data-name="women wear" data-price="1000"/>
+        <h3 style="font-size: 100px;color: black;">₹1000</h3>
+        <a class="cartBtn" href="cart.html" style="color: white; font-size: 50px; margin-right: 20px; text-decoration: none; background-color: #007bff; padding: 10px 20px; border-radius: 8px; display: inline-block;">
+    🛒 Cart
+  </a>
+  <button class="checkoutBtn" onclick="window.location.href='checkout.html'" 
+          style="font-size: 50px; padding: 10px 20px; display:none;">
+    Proceed to Checkout
+  </button>
+</div>
+
+        <div style="text-align: center; border: 1px solid #ddd; padding: 10px; width: 1000px;">
+        <img src="https://i.pinimg.com/564x/cb/48/c2/cb48c248011fb107e0df84cb86681880.jpg" width="1000" height="1800" data-name="women wear" data-price="1500"/>
+         <h3 style="font-size: 100px;color: black;">₹1500</h3>
+        <a class="cartBtn" href="cart.html" style="color: white; font-size: 50px; margin-right: 20px; text-decoration: none; background-color: #007bff; padding: 10px 20px; border-radius: 8px; display: inline-block;">
+    🛒 Cart
+  </a>
+  <button class="checkoutBtn" onclick="window.location.href='checkout.html'" 
+          style="font-size: 50px; padding: 10px 20px; display:none;">
+    Proceed to Checkout
+  </button>
+</div>
+
+        <div style="text-align: center; border: 1px solid #ddd; padding: 10px; width: 1000px;">
+        <img src="https://i.pinimg.com/736x/45/d6/72/45d672207486c7c66757939634e06cd4.jpg" width="1000" data-name="women wear" data-price="2500"/>
+        <h3 style="font-size: 100px;color: black;">₹2,500</h3>
+        <a class="cartBtn" href="cart.html" style="color: white; font-size: 50px; margin-right: 20px; text-decoration: none; background-color: #007bff; padding: 10px 20px; border-radius: 8px; display: inline-block;">
+    🛒 Cart
+  </a>
+  <button class="checkoutBtn" onclick="window.location.href='checkout.html'" 
+          style="font-size: 50px; padding: 10px 20px; display:none;">
+    Proceed to Checkout
+  </button>
+</div>
+
+        <div style="text-align: center; border: 1px solid #ddd; padding: 10px; width: 1000px;">
+        <img src="https://i.pinimg.com/736x/ff/52/1c/ff521cdf6f8b29bb2434493bf22bdb0f.jpg" width="1000" height="1800" data-name="women wear" data-price="1500"/>
+        <h3 style="font-size: 100px;color: black;">₹1,500</h3>
+        <a class="cartBtn" href="cart.html" style="color: white; font-size: 50px; margin-right: 20px; text-decoration: none; background-color: #007bff; padding: 10px 20px; border-radius: 8px; display: inline-block;">
+    🛒 Cart
+  </a>
+  <button class="checkoutBtn" onclick="window.location.href='checkout.html'" 
+          style="font-size: 50px; padding: 10px 20px; display:none;">
+    Proceed to Checkout
+  </button>
+</div>
+
+        <div style="text-align: center; border: 1px solid #ddd; padding: 10px; width: 1000px;">
+        <img src="https://i.pinimg.com/originals/6e/8f/c8/6e8fc8ef550f23a45bc64b657f975e91.jpg" width="1000" height="1800" data-name="women wear" data-price="1000"/>
+        <h3 style="font-size: 100px;color: black;">₹1,000</h3>
+        <a class="cartBtn" href="cart.html" style="color: white; font-size: 50px; margin-right: 20px; text-decoration: none; background-color: #007bff; padding: 10px 20px; border-radius: 8px; display: inline-block;">
+    🛒 Cart
+  </a>
+  <button class="checkoutBtn" onclick="window.location.href='checkout.html'" 
+          style="font-size: 50px; padding: 10px 20px; display:none;">
+    Proceed to Checkout
+  </button>
+</div>
+
+        <div style="text-align: center; border: 1px solid #ddd; padding: 10px; width: 1000px;">
+        <img src="https://i.pinimg.com/736x/36/f5/0b/36f50bc533d2f1dd9833585f166bce92.jpg" width="1000" height="1800" data-name="women wear" data-price="2500"/>
+        <h3 style="font-size: 100px;color: black;">₹2,500</h3>
+        <a class="cartBtn" href="cart.html" style="color: white; font-size: 50px; margin-right: 20px; text-decoration: none; background-color: #007bff; padding: 10px 20px; border-radius: 8px; display: inline-block;">
+    🛒 Cart
+  </a>
+  <button class="checkoutBtn" onclick="window.location.href='checkout.html'" 
+          style="font-size: 50px; padding: 10px 20px; display:none;">
+    Proceed to Checkout
+  </button>
+</div>
+       </div>
+
+        <h4 style="font-size: 100px;color: rgb(27, 3, 65);">Kid's Wear</h4>
+        <div style="display: flex; gap: 20px;">
+        <div style="text-align: center; border: 1px solid #ddd; padding: 10px; width: 1000px;">
+        <img src="https://m.media-amazon.com/images/I/61NsUjviV7L._UY1100_.jpg" width="1000" height="1800" data-name="kid's wear" data-price="900"/>
+        <h3 style="font-size: 100px;color: black;">₹900</h3>
+        <a class="cartBtn" href="cart.html" style="color: white; font-size: 50px; margin-right: 20px; text-decoration: none; background-color: #007bff; padding: 10px 20px; border-radius: 8px; display: inline-block;">
+    🛒 Cart
+  </a>
+  <button class="checkoutBtn" onclick="window.location.href='checkout.html'" 
+          style="font-size: 50px; padding: 10px 20px; display:none;">
+    Proceed to Checkout
+  </button>
+</div>
+        <div style="text-align: center; border: 1px solid #ddd; padding: 10px; width: 1000px;">
+        <img src="https://pinkchick.in/cdn/shop/products/WhatsAppImage2021-08-18at7.42.52PM.jpg?v=1746710862" width="1000" height="1800" data-name="kid's wear" data-price="900"/>
+        <h3 style="font-size: 100px;color: black;">₹900</h3>
+        <a class="cartBtn" href="cart.html" style="color: white; font-size: 50px; margin-right: 20px; text-decoration: none; background-color: #007bff; padding: 10px 20px; border-radius: 8px; display: inline-block;">
+    🛒 Cart
+  </a>
+  <button class="checkoutBtn" onclick="window.location.href='checkout.html'" 
+          style="font-size: 50px; padding: 10px 20px; display:none;">
+    Proceed to Checkout
+  </button>
+</div>
+
+        <div style="text-align: center; border: 1px solid #ddd; padding: 10px; width: 1000px;">
+        <img src="https://i.etsystatic.com/31805902/r/il/457dc6/3670751031/il_fullxfull.3670751031_958k.jpg" width="1000" height="1800" data-name="kid's wear" data-price="900"/>
+        <h3 style="font-size: 100px;color: black;">₹900</h3>
+        <a class="cartBtn" href="cart.html" style="color: white; font-size: 50px; margin-right: 20px; text-decoration: none; background-color: #007bff; padding: 10px 20px; border-radius: 8px; display: inline-block;">
+    🛒 Cart
+  </a>
+  <button class="checkoutBtn" onclick="window.location.href='checkout.html'" 
+          style="font-size: 50px; padding: 10px 20px; display:none;">
+    Proceed to Checkout
+  </button>
+</div>
+
+        <div style="text-align: center; border: 1px solid #ddd; padding: 10px; width: 1000px;">
+        <img src="https://i.pinimg.com/236x/44/72/48/44724849e50a2b4f577749c1f7dfddf5.jpg" width="1000" height="1800" data-name="kid's wear" data-price="900"/>
+        <h3 style="font-size: 100px;color: black;">₹900</h3>
+        <a class="cartBtn" href="cart.html" style="color: white; font-size: 50px; margin-right: 20px; text-decoration: none; background-color: #007bff; padding: 10px 20px; border-radius: 8px; display: inline-block;">
+    🛒 Cart
+  </a>
+  <button class="checkoutBtn" onclick="window.location.href='checkout.html'" 
+          style="font-size: 50px; padding: 10px 20px; display:none;">
+    Proceed to Checkout
+  </button>
+</div>
+
+        <div style="text-align: center; border: 1px solid #ddd; padding: 10px; width: 1000px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROQYGVmPM1rm6zMMS9NQvj67jUsVpkY2_FD8qtwrVCuL2F0Hm42bVrPWgJm8uD5z9Gc38&usqp=CAU" width="1000" height="1800" data-name="kid's wear" data-price="900"/>
+        <h3 style="font-size: 100px;color: black;">₹900</h3>
+        <a class="cartBtn" href="cart.html" style="color: white; font-size: 50px; margin-right: 20px; text-decoration: none; background-color: #007bff; padding: 10px 20px; border-radius: 8px; display: inline-block;">
+    🛒 Cart
+  </a>
+  <button class="checkoutBtn" onclick="window.location.href='checkout.html'" 
+          style="font-size: 50px; padding: 10px 20px; display:none;">
+    Proceed to Checkout
+  </button>
+</div>
+
+        <div style="text-align: center; border: 1px solid #ddd; padding: 10px; width: 1000px;">
+        <img src="https://i.pinimg.com/736x/ff/46/d7/ff46d73e5c9fb9810c970f0a8ffb1713.jpg" width="1000" height="1800" data-name="kid's wear" data-price="900"/>
+        <h3 style="font-size: 100px;color: black;">₹900</h3>
+        <a class="cartBtn" href="cart.html" style="color: white; font-size: 50px; margin-right: 20px; text-decoration: none; background-color: #007bff; padding: 10px 20px; border-radius: 8px; display: inline-block;">
+    🛒 Cart
+  </a>
+  <button class="checkoutBtn" onclick="window.location.href='checkout.html'" 
+          style="font-size: 50px; padding: 10px 20px; display:none;">
+    Proceed to Checkout
+  </button>
+</div>
+
+        <div style="text-align: center; border: 1px solid #ddd; padding: 10px; width: 1000px;">
+        <img src="https://image.made-in-china.com/2f0j00mWKlDiHJinMZ/New-Design-Beautiful-Satin-Dress-Kids-Wear-Baby-Clothes-Fashion-Evening-Dress.webp" width="1000" height="1800" data-name="kid's wear" data-price="900"/>
+        <h3 style="font-size: 100px;color: black;">₹900</h3>
+        <a class="cartBtn" href="cart.html" style="color: white; font-size: 50px; margin-right: 20px; text-decoration: none; background-color: #007bff; padding: 10px 20px; border-radius: 8px; display: inline-block;">
+    🛒 Cart
+  </a>
+  <button class="checkoutBtn" onclick="window.location.href='checkout.html'" 
+          style="font-size: 50px; padding: 10px 20px; display:none;">
+    Proceed to Checkout
+  </button>
+</div>
+        </div>
+        
+
+</body>
+</html>
